@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en" class="is-booting">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohamed Ashik S | Full Stack Developer &amp; AI / Data Science Engineer</title>
+<meta name="description" content="Portfolio of Mohamed Ashik S: full-stack web development, AI / machine learning and data analytics with Python, Flask, SQL and Power BI. B.Tech AI &amp; Data Science.">
+<meta name="author" content="Mohamed Ashik S">
+<meta name="theme-color" content="#000000">
+<link rel="icon" type="image/png" href="public/favicon.png">
+<link rel="apple-touch-icon" href="public/favicon.png">
+<!-- TODO: if the site is not deployed at this address, change og:url, og:image and the canonical link -->
+<link rel="canonical" href="https://ashi-nexus.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mohamed Ashik S">
+<meta property="og:title" content="Mohamed Ashik S | Full Stack Developer &amp; AI / Data Science Engineer">
+<meta property="og:description" content="Full-stack web apps, machine learning and data analytics with Python, Flask, SQL and Power BI.">
+<meta property="og:url" content="https://ashi-nexus.vercel.app/">
+<meta property="og:image" content="https://ashi-nexus.vercel.app/public/media/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mohamed Ashik S, full stack developer and AI / data science engineer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mohamed Ashik S | Full Stack Developer &amp; AI / Data Science Engineer">
+<meta name="twitter:description" content="Full-stack web apps, machine learning and data analytics with Python, Flask, SQL and Power BI.">
+<meta name="twitter:image" content="https://ashi-nexus.vercel.app/public/media/og.jpg">
+
+<link rel="preload" href="public/fonts/anton-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="public/fonts/oswald-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="public/fonts/oswald-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="src/styles/app.css">
+<link rel="stylesheet" href="src/styles/flow.css">
+<link rel="stylesheet" href="src/styles/chrono.css">
+<link rel="stylesheet" href="src/styles/projects.css">
+<link rel="stylesheet" href="src/styles/finale.css">
+<link rel="stylesheet" href="src/styles/content.css">
+</head>
+<body>
+
+<!-- the real heading, for search engines and screen readers; the visible
+     wordmark is drawn on the canvas so video can be clipped inside its letters -->
+<h1 class="sr-only">Mohamed Ashik S — Full Stack Developer, AI and Data Science Engineer. Python, Flask, SQL and Power BI.</h1>
+
+<div class="stage-wrap">
+  <canvas id="stage" aria-hidden="true"></canvas>
+
+  <!-- ------------------------------------------------------------------ -->
+  <header class="hdr" id="hdr">
+    <svg class="hdr__rule" id="hdrRule" aria-hidden="true" preserveAspectRatio="none">
+      <polyline id="hdrRulePath" fill="none" stroke="currentColor" stroke-width="1.25"
+                vector-effect="non-scaling-stroke"/>
+    </svg>
+
+    <a class="hdr__mark" href="#" data-nav aria-label="Mohamed Ashik S, home">
+      <span class="mark-word">ASHIK</span>
+    </a>
+
+    <span class="hdr__div" aria-hidden="true"></span>
+
+    <p class="hdr__roles">
+      <span>Full Stack</span><span>AI / DS</span><span>Data Analytics</span>
+    </p>
+
+    <nav class="hdr__nav" aria-label="Primary">
+      <ul>
+        <li><a href="#" class="is-active" data-nav>Home</a></li>
+        <li><a href="#about" data-nav>About</a></li>
+        <li><a href="#skills" data-nav>Skills</a></li>
+        <li><a href="#gallery" data-nav>Projects</a></li>
+        <li><a href="#experience" data-nav>Experience</a></li>
+        <li><a href="#contact" data-nav>Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hdr__meta">
+      <span class="hdr__metaLabel">Portfolio — 2026</span>
+      <span class="hdr__pips" aria-hidden="true"><i></i><i></i><i></i></span>
+    </div>
+
+    <button class="hdr__burger" id="burger" aria-expanded="false" aria-controls="hdrNavMobile">
+      <span aria-hidden="true"></span><span aria-hidden="true"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+  </header>
+
+  <!-- ------------------------------------------------------------------ -->
+  <div class="furniture" aria-hidden="true">
+    <p class="welcome" id="welcome">
+      <b class="welcome__dots">•••</b>
+      <span class="welcome__text">Welcome to my portfolio</span>
+      <b class="welcome__dots">•••</b>
+    </p>
+
+    <p class="chip chip--artist" id="chipArtist"><span>•Mohamed Ashik S•</span></p>
+    <p class="chip chip--legend" id="chipLegend"><span>•B.Tech-AI&DS•</span></p>
+
+    <div class="arrows arrows--l" id="arrowsL"></div>
+    <div class="arrows arrows--r" id="arrowsR"></div>
+    <!-- only the bottom-right grid remains: the top-left one sat under the
+         navigation and fought with it -->
+    <div class="grid-dots grid-dots--br" id="dotsBR"></div>
+  </div>
+
+  <!-- ------------------------------------------------------------------ -->
+  <nav class="menu" id="menu" aria-label="Primary, expanded" hidden>
+    <ul>
+      <li><a href="#" class="is-active" data-nav>Home</a></li>
+      <li><a href="#about" data-nav>About</a></li>
+      <li><a href="#skills" data-nav>Skills</a></li>
+      <li><a href="#gallery" data-nav>Projects</a></li>
+      <li><a href="#experience" data-nav>Experience</a></li>
+      <li><a href="#contact" data-nav>Contact</a></li>
+
+    </ul>
+    <p class="menu__tag">••• Welcome to my portfolio •••</p>
+  </nav>
+
+  <!-- ------------------------------------------------------------------ -->
+  <div class="boot" id="boot">
+    <div class="boot__bar"><i id="bootFill"></i></div>
+    <button class="boot__enter" id="bootEnter" hidden>
+      <span>Enter</span>
+    </button>
+  </div>
+
+  <noscript>
+    <div class="fallback">
+      <p>MOHAMED ASHIK S</p>
+      <small>This opening is an animated experience. Please enable JavaScript.</small>
+    </div>
+  </noscript>
+</div>
+
+<main class="flow">
+  <!-- the hero above is position:fixed, so this reserves its scroll height -->
+  <div class="hero-spacer" aria-hidden="true"></div>
+
+  <!-- ==================================================================== -->
+  <section class="about" id="about" aria-labelledby="aboutTitle">
+    <div class="wrap about__in">
+      <figure class="about__fig reveal">
+        <img src="public/img/portrait.jpg" width="800" height="1000" loading="lazy" decoding="async"
+             alt="Mohamed Ashik S in a black suit, one hand raised to his face">
+      </figure>
+      <div class="about__txt">
+        <p class="over reveal">About</p>
+        <h2 class="h2 reveal" id="aboutTitle">Full-stack developer.<br>Data and AI engineer.</h2>
+        <p class="reveal">I&rsquo;m Mohamed Ashik S, a B.Tech student in Artificial Intelligence and Data Science at M.A.M College of Engineering, Tiruchirappalli. I build full-stack web applications and data-driven systems with Python, Flask and SQL: face-recognition platforms, analytics dashboards, and SaaS back ends with payments and background jobs.</p>
+        <p class="reveal">I have worked as a data analyst and AI/ML intern at four organisations and was named Best Performer at Elevate Labs in 2025. I&rsquo;m currently a Data Analyst Intern at Nizcare in Trichy, and I enjoy taking a project from raw data all the way to something people can use.</p>
+        <dl class="facts reveal">
+          <div><dt>Studying</dt><dd>B.Tech, Artificial Intelligence &amp; Data Science<br><small>M.A.M College of Engineering &middot; Sep 2023 &ndash; May 2027</small></dd></div>
+          <div><dt>Now</dt><dd>Data Analyst Intern, Nizcare Private Limited<br><small>Trichy &middot; Dec 2025 &ndash; present</small></dd></div>
+          <div><dt>Languages</dt><dd>English (fluent), Tamil (fluent), Urdu (intermediate), Malayalam (intermediate)</dd></div>
+        </dl>
+        <p class="about__cta reveal">
+          <a class="btn" href="public/resume/Mohamed_Ashik_CV.pdf" download>Download r&eacute;sum&eacute;</a>
+          <a class="btn btn--ghost" href="#contact" data-nav>Get in touch</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <section class="skills" id="skills" aria-labelledby="skillsTitle">
+    <div class="wrap">
+      <p class="over reveal">Skills &amp; tools</p>
+      <h2 class="h2 reveal" id="skillsTitle">What I work with</h2>
+      </div>
+    <div class="orbit" id="orbit" role="group" aria-label="Skills and tools. Hover or focus a logo to see its name.">
+      <canvas class="orbit__cv" aria-hidden="true"></canvas>
+      <div class="orbit__core" aria-live="polite">
+        <span class="orbit__k">Skills &amp; tools</span>
+        <strong class="orbit__v">25 logos</strong>
+        <span class="orbit__s">Hover to explore</span>
+      </div>
+      <ul class="orbit__items">
+          <li><button class="ob" type="button" data-ring="0" data-name="Python" data-group="Programming" aria-label="Python"><img src="public/icons/python.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="0" data-name="SQL" data-group="Programming|Databases &amp; cloud" aria-label="SQL"><img src="public/icons/sql.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="0" data-name="JavaScript" data-group="Programming" aria-label="JavaScript"><img src="public/icons/javascript.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="0" data-name="HTML" data-group="Frontend" aria-label="HTML"><img src="public/icons/html5.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="0" data-name="CSS" data-group="Frontend" aria-label="CSS"><img src="public/icons/css.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="0" data-name="Flask" data-group="Backend" aria-label="Flask"><img src="public/icons/flask.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="1" data-name="Power BI" data-group="Data analytics" aria-label="Power BI"><img src="public/icons/powerbi.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="1" data-name="Excel" data-group="Data analytics" aria-label="Excel"><img src="public/icons/excel.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="1" data-name="pandas" data-group="Data analytics" aria-label="pandas"><img src="public/icons/pandas.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="1" data-name="NumPy" data-group="Data analytics" aria-label="NumPy"><img src="public/icons/numpy.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="1" data-name="Matplotlib" data-group="Data analytics" aria-label="Matplotlib"><img src="public/icons/matplotlib.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="1" data-name="Seaborn" data-group="Data analytics" aria-label="Seaborn"><img src="public/icons/seaborn.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="1" data-name="EDA" data-group="Data analytics" aria-label="EDA"><img src="public/icons/eda.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="1" data-name="Statistical analysis" data-group="Data analytics" aria-label="Statistical analysis"><img src="public/icons/stats.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="1" data-name="NLP" data-group="AI / ML" aria-label="NLP"><img src="public/icons/nlp.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="1" data-name="YOLO" data-group="AI / ML" aria-label="YOLO"><img src="public/icons/yolo.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="1" data-name="Face recognition" data-group="AI / ML" aria-label="Face recognition"><img src="public/icons/face.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="1" data-name="scikit-learn" data-group="AI / ML" aria-label="scikit-learn"><img src="public/icons/scikitlearn.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="2" data-name="Selenium" data-group="Automation" aria-label="Selenium"><img src="public/icons/selenium.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="2" data-name="Browser automation" data-group="Automation" aria-label="Browser automation"><img src="public/icons/automation.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="2" data-name="SQLite" data-group="Databases &amp; cloud" aria-label="SQLite"><img src="public/icons/sqlite.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="2" data-name="Cloudinary" data-group="Databases &amp; cloud" aria-label="Cloudinary"><img src="public/icons/cloudinary.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="2" data-name="Git" data-group="Tools" aria-label="Git"><img src="public/icons/git.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="2" data-name="GitHub" data-group="Tools" aria-label="GitHub"><img src="public/icons/github.svg" alt="" width="40" height="40" decoding="async"></button></li>
+          <li><button class="ob" type="button" data-ring="2" data-name="Razorpay" data-group="Tools" aria-label="Razorpay"><img src="public/icons/razorpay.svg" alt="" width="40" height="40" decoding="async"></button></li>
+      </ul>
+    </div>
+    <ul class="orbit__legend" aria-label="Filter by group"><li><button type="button" data-group="Programming" aria-pressed="false">Programming</button></li><li><button type="button" data-group="Frontend" aria-pressed="false">Frontend</button></li><li><button type="button" data-group="Backend" aria-pressed="false">Backend</button></li><li><button type="button" data-group="Data analytics" aria-pressed="false">Data analytics</button></li><li><button type="button" data-group="AI / ML" aria-pressed="false">AI / ML</button></li><li><button type="button" data-group="Automation" aria-pressed="false">Automation</button></li><li><button type="button" data-group="Databases &amp; cloud" aria-pressed="false">Databases &amp; cloud</button></li><li><button type="button" data-group="Tools" aria-pressed="false">Tools</button></li></ul>
+<div class="wrap skills__fallback"><div class="skills__grid">
+        <article class="sk reveal"><h3>Programming</h3><ul><li><img src="public/icons/python.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>Python</span></li><li><img src="public/icons/sql.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>SQL</span></li><li><img src="public/icons/javascript.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>JavaScript</span></li></ul></article>
+        <article class="sk reveal"><h3>Frontend</h3><ul><li><img src="public/icons/html5.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>HTML</span></li><li><img src="public/icons/css.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>CSS</span></li></ul></article>
+        <article class="sk reveal"><h3>Backend</h3><ul><li><img src="public/icons/flask.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>Flask</span></li></ul></article>
+        <article class="sk reveal"><h3>Data analytics</h3><ul><li><img src="public/icons/powerbi.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>Power BI</span></li><li><img src="public/icons/excel.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>Excel</span></li><li><img src="public/icons/pandas.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>pandas</span></li><li><img src="public/icons/numpy.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>NumPy</span></li><li><img src="public/icons/matplotlib.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>Matplotlib</span></li><li><img src="public/icons/seaborn.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>Seaborn</span></li><li><img src="public/icons/eda.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>EDA</span></li><li><img src="public/icons/stats.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>Statistical analysis</span></li></ul></article>
+        <article class="sk reveal"><h3>AI / ML</h3><ul><li><img src="public/icons/nlp.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>NLP</span></li><li><img src="public/icons/yolo.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>YOLO</span></li><li><img src="public/icons/face.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>Face recognition</span></li><li><img src="public/icons/scikitlearn.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>scikit-learn</span></li></ul></article>
+        <article class="sk reveal"><h3>Automation</h3><ul><li><img src="public/icons/selenium.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>Selenium</span></li><li><img src="public/icons/automation.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>Browser automation</span></li></ul></article>
+        <article class="sk reveal"><h3>Databases &amp; cloud</h3><ul><li><img src="public/icons/sqlite.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>SQLite</span></li><li><img src="public/icons/sql.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>SQL</span></li><li><img src="public/icons/cloudinary.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>Cloudinary</span></li></ul></article>
+        <article class="sk reveal"><h3>Tools</h3><ul><li><img src="public/icons/git.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>Git</span></li><li><img src="public/icons/github.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>GitHub</span></li><li><img src="public/icons/razorpay.svg" alt="" width="40" height="40" loading="lazy" decoding="async"><span>Razorpay</span></li></ul></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <section class="chrono" id="chrono" aria-labelledby="chronoTitle">
+    <div class="chrono__pin">
+      <canvas id="chronoStage" aria-hidden="true"></canvas>
+
+      <h2 class="chrono__title" id="chronoTitle">
+        <span>A</span><span>Journey</span><span>Through</span><span>Time</span>
+      </h2>
+      <p class="chrono__rail" aria-hidden="true">
+        <i></i>
+        <span>Learning</span><span>Internships</span><span>Projects</span>
+        <span>Skills</span><span>Me</span>
+        <i></i>
+      </p>
+
+      <p class="chrono__hint" aria-hidden="true">
+        Move<br>to travel<br>through time<i></i>
+      </p>
+      <p class="chrono__note chrono__note--bl" aria-hidden="true">
+        Same<br>curiosity<br>smarter<br>systems
+      </p>
+      <p class="chrono__note chrono__note--br" aria-hidden="true">
+        Still<br>building<br>what's<br>next<i></i>
+      </p>
+
+      <div class="chrono__deck" id="chronoDeck"></div>
+
+      <!-- the figure's own layer, stacked over the deck: he stands in front
+           of the timeline, looking at his journey -->
+      <canvas id="chronoFront" aria-hidden="true"></canvas>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <section class="gallery" id="gallery" aria-labelledby="galleryTitle">
+    <div class="gallery__pin">
+      <canvas id="galleryStage" aria-hidden="true"></canvas>
+
+      <div class="gallery__world">
+        <div class="gallery__deck" id="galleryDeck"></div>
+        <img class="gallery__person" id="galleryPerson"
+             src="public/projects/person.png" alt="" draggable="false">
+      </div>
+
+      <h2 class="g-label g-label--projects" id="galleryTitle">Projects</h2>
+      <p class="g-label g-label--ideas" aria-hidden="true">
+        Data<br>Models<br>Products<br><b>Real Impact</b>
+      </p>
+      <p class="g-label g-label--scroll" aria-hidden="true">
+        Scroll<br>Explore<br>Interact
+      </p>
+      <p class="g-label g-label--real" aria-hidden="true">
+        Real<br>Projects<br>Real<br>Problems
+      </p>
+      <p class="g-label g-label--tomorrow" aria-hidden="true">
+        Building<br>Smarter<br>Systems
+      </p>
+      <span class="g-label g-label--num" id="galleryNum" aria-hidden="true">01</span>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <section class="exp" id="experience" aria-labelledby="expTitle">
+    <div class="wrap">
+      <p class="over reveal">Experience &amp; education</p>
+      <h2 class="h2 reveal" id="expTitle">Where I&rsquo;ve worked and studied</h2>
+
+      <ol class="jobs">
+        <li class="job reveal">
+          <p class="job__when">Dec 2025 &ndash; present</p>
+          <div>
+            <h3>Data Analyst Intern <span>Nizcare Private Limited, Trichy</span></h3>
+            <ul>
+              <li>Worked with Excel and data analytics tools for real-world data processing and reporting.</li>
+              <li>Built responsive website pages and professional email templates using HTML.</li>
+              <li>Supported data management, analysis and business operations workflows.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job reveal">
+          <p class="job__when">Sep &ndash; Nov 2025</p>
+          <div>
+            <h3>Data Analyst Intern <span>Elevate Labs</span></h3>
+            <ul>
+              <li>Awarded Best Performer for internship performance.</li>
+              <li>Performed data cleaning, preprocessing and exploratory data analysis.</li>
+              <li>Built analytical dashboards and reports using Python and Power BI.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job reveal">
+          <p class="job__when">Jul 2025</p>
+          <div>
+            <h3>AI &amp; ML Intern <span>TechShiksha, Bangalore</span></h3>
+            <ul>
+              <li>Worked with NLP, computer vision and Microsoft Azure Cloud.</li>
+              <li>Developed machine learning workflows for document intelligence applications.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job reveal">
+          <p class="job__when">Mar &ndash; May 2025</p>
+          <div>
+            <h3>Data Science Intern <span>EdVedha</span></h3>
+            <ul>
+              <li>Built an e-commerce product recommendation system.</li>
+              <li>Applied collaborative filtering, content-based recommendation and scikit-learn.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+
+      <div class="cols">
+        <section class="reveal" aria-labelledby="eduT">
+          <h3 class="h3" id="eduT">Education</h3>
+          <ul class="plain">
+            <li><b>B.Tech &ndash; Artificial Intelligence and Data Science</b><br>M.A.M College of Engineering, Tiruchirappalli<br><small>Sep 2023 &ndash; May 2027</small></li>
+            <li><b>HSLC (Higher Secondary)</b><br>Boiler Plant Boys Higher Secondary School<br><small>Score: 75.8%</small></li>
+            <li><b>SSLC (Secondary School)</b><br>Boiler Plant Boys Higher Secondary School<br><small>Score: 80%</small></li>
+          </ul>
+        </section>
+        <section class="reveal" aria-labelledby="certT">
+          <h3 class="h3" id="certT">Certifications</h3>
+          <ul class="plain">
+            <li>Microsoft &ndash; Describe Cloud Computing</li>
+            <li>Microsoft &ndash; Natural Language Processing</li>
+            <li>Microsoft + LinkedIn &ndash; Career Essentials in Generative AI</li>
+            <li>Infosys Springboard &ndash; Python Basics</li>
+            <li>Excel Dashboard &ndash; NoviTech</li>
+            <li>AI Face Recognition &ndash; LiveWire</li>
+            <li>Menmozhi AI &ndash; Generative AI Participation</li>
+          </ul>
+        </section>
+        <section class="reveal" aria-labelledby="achT">
+          <h3 class="h3" id="achT">Achievements</h3>
+          <ul class="plain">
+            <li>Best Performer Award &ndash; Elevate Labs (2025)</li>
+            <li>Microsoft Bangalore Industrial Visit &ndash; TechShiksha</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== -->
+  <section class="contact" id="contact" aria-labelledby="contactTitle">
+    <div class="wrap">
+      <p class="over reveal">Contact</p>
+      <h2 class="h2 reveal" id="contactTitle">Let&rsquo;s build something useful</h2>
+      <p class="reveal contact__lede">I&rsquo;m open to data analytics, machine learning and full-stack development roles and internships. The quickest way to reach me is email.</p>
+      <ul class="contact__list">
+        <li class="reveal"><span>Email</span><a href="mailto:mohamedashik2306@gmail.com">mohamedashik2306@gmail.com</a></li>
+        <li class="reveal"><span>Phone</span><a href="tel:+919360743674">+91 93607 43674</a></li>
+        <li class="reveal"><span>LinkedIn</span><a href="https://linkedin.com/in/mohamedashik2306" target="_blank" rel="me noopener">linkedin.com/in/mohamedashik2306</a></li>
+        <li class="reveal"><span>GitHub</span><a href="https://github.com/ashikhub23" target="_blank" rel="me noopener">github.com/ashikhub23</a></li>
+      </ul>
+      <p class="reveal"><a class="btn" href="public/resume/Mohamed_Ashik_CV.pdf" download>Download r&eacute;sum&eacute;</a></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ====================================================================== -->
+<footer class="fin" id="fin" aria-label="Closing">
+  <div class="fin__pin">
+  <h2 class="sr-only">Mohamed Ashik S</h2>
+
+  <div class="fin__stage1" id="finStage1">
+    <canvas id="finBack" aria-hidden="true"></canvas>
+    <canvas id="finMan" aria-hidden="true"></canvas>
+
+    <p class="f-cap f-cap--tl" aria-hidden="true">
+      Data<br>Models<br>Dashboards<br>Real Impact
+    </p>
+    <blockquote class="f-cap f-cap--quote">
+      &ldquo;Clean<br>Data.<br>Real<br>Systems.&rdquo;
+    </blockquote>
+    <p class="f-cap f-cap--blw" aria-hidden="true">An<br>Engineer&rsquo;s<br>World</p>
+    <p class="f-cap f-cap--tr" aria-hidden="true">
+      Same<br>Passion<br>Smarter<br>Tomorrow
+    </p>
+    <p class="f-cap f-cap--br" aria-hidden="true">Analyze<br>Build<br>Deploy<br>Repeat</p>
+  </div>
+
+  <div class="fin__dim" id="finDim" aria-hidden="true"></div>
+
+  <!-- the second frame of the finale: slides in from the left on scroll.
+       Dormant until its image exists (see boot6's candidate list). -->
+  <figure class="fin__frame2" id="finFrame2" aria-hidden="true" hidden>
+    <img id="finFrame2Img" alt="" draggable="false" decoding="async">
+  </figure>
+
+  <div class="fin__bar">
+    <a href="#contact" data-nav>Contact</a>
+    <nav class="fin__soc" aria-label="Social">
+      <a href="https://github.com/ashikhub23" rel="me" target="_blank">GitHub</a>
+      <a href="mailto:mohamedashik2306@gmail.com" rel="me">Email</a>
+      <a href="public/resume/Mohamed_Ashik_CV.pdf" download>R&eacute;sum&eacute;</a>
+      <a href="https://linkedin.com/in/mohamedashik2306" rel="me" target="_blank">LinkedIn</a>
+    </nav>
+    <small class="fin__c">&copy; 2026 Mohamed Ashik S</small>
+  </div>
+  </div>
+</footer>
+
+
+<dialog class="proj" id="projDialog" aria-labelledby="projTitle">
+  <button class="proj__x" type="button" id="projClose" aria-label="Close project details">&times;</button>
+  <p class="proj__kicker" id="projKicker"></p>
+  <h2 class="proj__title" id="projTitle"></h2>
+  <p class="proj__sum" id="projSum"></p>
+  <ul class="proj__feat" id="projFeat"></ul>
+  <ul class="proj__tech" id="projTech" aria-label="Technologies"></ul>
+  <p class="proj__links" id="projLinks"></p>
+</dialog>
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>

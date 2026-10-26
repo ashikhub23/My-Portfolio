@@ -1,0 +1,99 @@
+{
+  "_note": "Source of truth for the gallery cards and their detail panel. Text comes from the resume (Projects, Internships, Certifications, Achievements) and from the live links on the existing portfolio. `repo` is null until you add a real GitHub URL - the panel simply hides the button when it is null. `live` is only set where a deployed demo exists.",
+  "projects": [
+    {
+      "id": "p01_smartpix", "motif": "face", "kind": "project",
+      "title": "SmartPix", "kicker": "AI event photo matching",
+      "summary": "A full-stack platform that matches guest selfies with event photographs, so each guest can find the photos they appear in.",
+      "features": ["Face-recognition encodings for matching", "Selfie capture and QR-based guest access", "Real-time matching against the event gallery", "Photo storage on Cloudinary"],
+      "tech": ["Python", "Flask", "HTML", "CSS", "JavaScript", "Cloudinary", "Face Recognition"],
+      "live": "https://smartpix.onrender.com", "repo": null
+    },
+    {
+      "id": "p02_structai", "motif": "crack", "kind": "project",
+      "title": "StructAI", "kicker": "Structural health monitoring",
+      "summary": "An AI-based inspection system that detects and classifies structural cracks with YOLO and turns the findings into inspection reports.",
+      "features": ["YOLO crack detection and classification", "Crack severity assessment and progression tracking", "Role-based access", "Automated PDF inspection reports"],
+      "tech": ["Python", "PyTorch", "YOLO", "OpenCV", "Flask", "React.js", "PostgreSQL"],
+      "live": null, "repo": null
+    },
+    {
+      "id": "p03_hotelpulse", "motif": "kpi", "kind": "project",
+      "title": "HotelPulse AI", "kicker": "Hotel analytics SaaS",
+      "summary": "An upload-first analytics platform for hotel finance teams: drop in CSV files and the dashboards update from the data.",
+      "features": ["CSV ingestion for invoices, customers and hotels", "Live KPIs: DSO, collection efficiency, overdue analysis", "Forecasting", "Downloadable HTML reports"],
+      "tech": ["Python", "pandas", "SQL", "Next.js", "FastAPI", "SQLAlchemy", "PostgreSQL", "JWT"],
+      "live": null, "repo": null
+    },
+    {
+      "id": "p04_printflow", "motif": "pipeline", "kind": "project",
+      "title": "PrintFlow AI", "kicker": "SaaS print shop platform",
+      "summary": "A production-oriented print ordering platform where pricing, page counting and payment verification are enforced on the server.",
+      "features": ["Server-side pricing, page counting and payment verification", "Celery and Redis job processing", "S3-compatible storage and Razorpay payments", "WebSocket order tracking and CUPS/IPP printer monitoring"],
+      "tech": ["FastAPI", "Celery", "Redis", "WebSockets", "S3", "Razorpay", "CUPS/IPP", "Docker"],
+      "live": null, "repo": null
+    },
+    {
+      "id": "p05_faceattend", "motif": "scan", "kind": "project",
+      "title": "Smart Face Recognition Attendance", "kicker": "Computer vision",
+      "summary": "An attendance system that identifies students in real time with OpenCV and face recognition and logs them to a database.",
+      "features": ["Real-time face detection and identification", "Database-based attendance logging"],
+      "tech": ["Python", "OpenCV", "Face Recognition", "SQLite"],
+      "live": null, "repo": null
+    },
+    {
+      "id": "p06_planttalk", "motif": "plant", "kind": "project",
+      "title": "PlantTalk AI", "kicker": "Image to talking video",
+      "summary": "An AI system that turns a plant image into a talking video from a custom script, with speech in Tamil and English.",
+      "features": ["Image animation and facial mapping", "Text-to-speech in Tamil and English", "AI video generation from custom scripts"],
+      "tech": ["Python", "Generative AI", "Facial Mapping", "Text-to-Speech"],
+      "live": null, "repo": null
+    },
+    {
+      "id": "p07_restaurant", "motif": "qr", "kind": "project",
+      "title": "Smart Restaurant", "kicker": "QR ordering system",
+      "summary": "A QR-based digital ordering platform: guests order from the table while the kitchen sees orders arrive in real time.",
+      "features": ["Real-time order management and kitchen notifications", "Automated billing and GST calculation", "Table management and order status tracking"],
+      "tech": ["Python", "Flask", "JavaScript", "HTML/CSS", "SQLite"],
+      "live": "https://restaurant-qr-code.onrender.com", "repo": null
+    },
+    {
+      "id": "p08_attendiq", "motif": "automation", "kind": "project",
+      "title": "Attendance Automation", "kicker": "Flask + Selenium",
+      "summary": "Upload an absentee list and the system marks attendance on the college portal, showing each step as it runs.",
+      "features": ["Extracts register numbers from PDF, Excel, CSV and TXT files", "Regex and pandas processing", "Automated attendance marking on the college portal", "Live automation console with browser screenshots"],
+      "tech": ["Python", "Flask", "Selenium", "pandas", "Regex", "SQLAlchemy", "pdfplumber", "Tailwind CSS"],
+      "live": "https://attendiq-hpg3.onrender.com", "repo": null
+    },
+    {
+      "id": "p09_recommender", "motif": "matrix", "kind": "project",
+      "title": "Product Recommendation System", "kicker": "E-commerce \u00b7 EdVedha internship",
+      "summary": "An e-commerce product recommendation system built during the Data Science internship at EdVedha.",
+      "features": ["Collaborative filtering", "Content-based recommendation"],
+      "tech": ["Python", "scikit-learn", "pandas"],
+      "live": null, "repo": null
+    },
+    {
+      "id": "p10_dashboards", "motif": "bars", "kind": "project",
+      "title": "Analytics Dashboards", "kicker": "Python \u00b7 Power BI",
+      "summary": "Analytical dashboards and reports built during the Data Analyst internship at Elevate Labs, from raw data to published views.",
+      "features": ["Data cleaning and preprocessing", "Exploratory data analysis", "Interactive dashboards and reports"],
+      "tech": ["Python", "pandas", "Power BI", "Excel"],
+      "live": null, "repo": null
+    },
+    {
+      "id": "p11_certs", "motif": "badge", "kind": "list",
+      "title": "Certifications", "kicker": "Learning",
+      "summary": "Courses and credentials completed alongside the degree.",
+      "features": ["Microsoft \u2013 Describe Cloud Computing", "Microsoft \u2013 Natural Language Processing", "Microsoft + LinkedIn \u2013 Career Essentials in Generative AI", "Infosys Springboard \u2013 Python Basics", "Excel Dashboard \u2013 NoviTech", "AI Face Recognition \u2013 LiveWire", "Menmozhi AI \u2013 Generative AI Participation"],
+      "tech": [], "live": null, "repo": null
+    },
+    {
+      "id": "p12_awards", "motif": "star", "kind": "list",
+      "title": "Achievements", "kicker": "Recognition",
+      "summary": "Recognition earned during internships.",
+      "features": ["Best Performer Award \u2013 Elevate Labs (2025)", "Microsoft Bangalore Industrial Visit \u2013 TechShiksha"],
+      "tech": [], "live": null, "repo": null
+    }
+  ]
+}

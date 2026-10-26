@@ -1,0 +1,20 @@
+/* ==========================================================================
+   The scrolling page that sits over the fixed hero.
+   ========================================================================== */
+
+.flow {
+  position: relative;
+  z-index: 2;
+  /* The flow sits above the fixed hero (header, menu, enter button). It must
+     not swallow their clicks: only its real sections take the pointer. */
+  pointer-events: none;
+}
+.flow > section { pointer-events: auto; }
+
+/* The hero is position:fixed, so its scroll height has to be reserved here or
+   the next section would start at the top of the document and sit on top of
+   it. */
+.hero-spacer {
+  height: 100svh;
+  pointer-events: none;
+}
